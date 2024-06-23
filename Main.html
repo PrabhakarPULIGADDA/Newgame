@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nammakam 🙏 - Memory Match Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="start-page">
+        <h1>Nammakam 🙏</h1>
+        <h2>Memory Match Game</h2>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+    
+    <div class="container" id="game-page" style="display:none;">
+        <h2>Memory Match Game</h2>
+        <div id="instructions">
+            <h3>Instructions:</h3>
+            <p>Click on any card to reveal its symbol. Click on another card to find its matching pair.</p>
+            <p>If the symbols match, they will stay face-up. If not, both cards will flip back face-down.</p>
+            <p>Match all pairs to complete the game!</p>
+        </div>
+        <div id="game-board" class="board"></div>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+    
+    <div class="container" id="end-page" style="display:none;">
+        <h2>Congratulations!</h2>
+        <p>You've completed the Memory Match Game.</p>
+        <button onclick="showLinks()">Useful Links</button>
+    </div>
+    
+    <footer id="links" style="display:none;">
+        <p>Useful Links:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="https://www.arvindguptatoys.com">Aravind Gupta</a></li>
+        </ul>
+        <p>Thank You!</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
